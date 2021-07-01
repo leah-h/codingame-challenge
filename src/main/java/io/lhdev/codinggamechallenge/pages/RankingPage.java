@@ -1,21 +1,21 @@
 package io.lhdev.codinggamechallenge.pages;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
 
-@AllArgsConstructor
-@NoArgsConstructor
 public class RankingPage {
 
-    private ChromeDriver driver;
+    private WebDriver driver;
 
     private final By playerReport = By.className("player-report");
     private final By nickname = By.className("nickname");
     private final By score = By.xpath("//span[contains(text(), '%')]");
     private final By duration = By.xpath("//*[contains(text(), '00:')]");
     private final By viewCode = By.cssSelector("[ng-if=\"isSolutionVisible(player)\"]");
+
+    public RankingPage(WebDriver driver) {
+        this.driver = driver;
+    }
 
 
     public String getNickNameText(int i) {
