@@ -35,7 +35,6 @@ public class CodinggamechallengeApplication {
 		System.out.println("Enter new file name: ");
 		String fileName = myScanner.nextLine();
 
-		// String URL = "https://www.codingame.com/clashofcode/clash/report/18251894f20e9cffc2c6aa10ec90ed55570dea0";
 		// String URL = "https://www.codingame.com/clashofcode/clash/report/184344691a4dab2e69844a20c0d57f46cf3c885";
 
 		WebDriverManager.chromedriver().setup();

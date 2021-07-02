@@ -3,7 +3,6 @@ package io.lhdev.codinggamechallenge.pages;
 import lombok.AllArgsConstructor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.springframework.beans.factory.annotation.Value;
 
 @AllArgsConstructor
 public class LoginPage {
