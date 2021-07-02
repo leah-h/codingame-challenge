@@ -13,13 +13,11 @@ public class LoginPage {
     private By accept = By.xpath("//*[text()='Accept']");
     private By emailInputBar = By.cssSelector("input[name=\"email\"]");
 
-    @Value("${CODING_GAME_EMAIL}")
-    private String email = "harrichl@gmail.com";
+    private String email= System.getenv("CODING_GAME_EMAIL");
 
     private By passwordInputBar= By.cssSelector("input[name=\"password\"]");
 
-    @Value("${CODING_GAME_PASSWORD}")
-    private String password = "codingametest1";
+    private String password = System.getenv("CODING_GAME_PASSWORD");
 
     //private By login = By.xpath("//[text()='Log In']");
     private By login = By.xpath("//button[contains(text(),'Log In')]");
