@@ -22,3 +22,17 @@ file will contain player information ie. rank, name, score, duration, and whethe
 3. Open with your IDE and run CodinggamechallengeApplication
 4. In terminal, enter clash URL
 5. Enter file name(no file extension). The generated file will be on your Desktop.
+
+<hr />
+
+### Contributors
+* Raymond Lee
+* Chakong Xiong
+* Cody Diego Sutton
+* Hetvi Patel
+* Leah Harrichand
+
+<hr />
+
+[License](LICENSE)
+
