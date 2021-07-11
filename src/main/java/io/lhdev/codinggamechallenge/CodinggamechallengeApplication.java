@@ -49,13 +49,10 @@ public class CodinggamechallengeApplication {
 		Boolean acceptIsPresent = driver.findElements(By.xpath("//*[text()='Accept']")).size() > 0;
 		wdw.until(ExpectedConditions.elementToBeClickable((loginPage.acceptElement())));
 
-		if(acceptIsPresent) {
+		if(acceptIsPresent)
 			loginPage.clickAccept();
 
-			wdw.until(ExpectedConditions.elementToBeClickable(loginPage.loginElement()));
-		}
-
-
+		wdw.until(ExpectedConditions.elementToBeClickable(loginPage.loginElement()));
 		loginPage.clickLogin();
 
 		wdw.until(ExpectedConditions.elementToBeClickable(loginPage.emailElement()));
